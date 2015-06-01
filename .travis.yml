@@ -1,0 +1,6 @@
+before_install:
+  - gem install logstash-devutils
+language: ruby
+rvm:
+  - 2.1.0
+sudo: required

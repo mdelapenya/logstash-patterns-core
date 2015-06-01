@@ -1,0 +1,14 @@
+before_install:
+  - gem install bundler
+  - bundle install
+bundler_args: --retry=3 --jobs=3
+cache: bundler
+env:
+  global:
+    - JRUBY_OPTS="-J-Xmx1024M --debug"
+language: ruby
+rvm:
+  - 2.1.0
+script:
+  - bundle exec rspec spec
+sudo: true

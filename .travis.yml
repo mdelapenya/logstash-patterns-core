@@ -1,0 +1,6 @@
+before_install:
+  - sudo rvm install jruby
+language: ruby
+rvm:
+  - 1.9.3
+sudo: required
